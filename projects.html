@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Daftar karya dan proyek portofolio Suci Dian Azzahra.">
+  <title>Portofolio | Suci Dian Azzahra</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="index.html">
+        <span class="brand-logo">S</span>
+        <span>Suci<span class="text-primary">Dian</span></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+              aria-controls="navMenu" aria-expanded="false" aria-label="Buka menu navigasi">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Portofolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="detail.html">Studi Kasus</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">Tentang</a></li>
+          <li class="nav-item ms-lg-2">
+            <a class="btn btn-primary px-3" href="login.html">
+              <i class="bi bi-box-arrow-in-right me-1"></i>Login
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= HEADER HALAMAN ================= -->
+  <section class="hero" style="padding: 8rem 0 3.5rem;">
+    <div class="container text-center position-relative" style="z-index: 1;">
+      <h1 class="fw-bold mb-2">Portofolio Karya</h1>
+      <p class="lead mb-0">Kumpulan proyek yang saya kerjakan selama menempuh perkuliahan.</p>
+    </div>
+  </section>
+
+  <!-- ================= DAFTAR PROYEK ================= -->
+  <section class="py-5">
+    <div class="container">
+
+      <!-- Tombol filter (Bootstrap button group) -->
+      <div class="d-flex justify-content-center flex-wrap gap-2 mb-5" role="group" aria-label="Filter kategori proyek">
+        <button class="btn btn-primary filter-btn active" data-filter="all">Semua</button>
+        <button class="btn btn-outline-primary filter-btn" data-filter="web">Web</button>
+        <button class="btn btn-outline-primary filter-btn" data-filter="desain">Desain</button>
+        <button class="btn btn-outline-primary filter-btn" data-filter="multimedia">Multimedia</button>
+        <button class="btn btn-outline-primary filter-btn" data-filter="data">Data</button>
+        <button class="btn btn-outline-primary filter-btn" data-filter="video">Video</button>
+      </div>
+
+      <!-- Grid kartu proyek -->
+      <div class="row g-4" id="projectGrid">
+
+        <!-- Proyek 1 -->
+        <div class="col-md-6 col-lg-4 project-item" data-kategori="web">
+          <div class="card card-hover h-100">
+            <img src="img/project-1.svg" class="portfolio-thumb w-100" alt="Website Portofolio Pribadi">
+            <div class="card-body d-flex flex-column">
+              <span class="badge badge-soft mb-2 align-self-start">Web</span>
+              <h5 class="card-title fw-bold">Website Portofolio Pribadi</h5>
+              <p class="card-text text-muted-soft flex-grow-1">
+                Website multi-halaman berisi profil, karya, dan halaman login dengan validasi JavaScript.
+              </p>
+              <a href="detail.html" class="btn btn-primary btn-sm">Lihat Detail</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyek 2 -->
+        <div class="col-md-6 col-lg-4 project-item" data-kategori="web">
+          <div class="card card-hover h-100">
+            <img src="img/project-2.svg" class="portfolio-thumb w-100" alt="Aplikasi Absensi Sederhana">
+            <div class="card-body d-flex flex-column">
+              <span class="badge badge-soft mb-2 align-self-start">Web</span>
+              <h5 class="card-title fw-bold">Aplikasi Absensi Sederhana</h5>
+              <p class="card-text text-muted-soft flex-grow-1">
+                Latihan membuat form absensi dengan penyimpanan data di browser (localStorage).
+              </p>
+              <a href="detail.html" class="btn btn-primary btn-sm">Lihat Detail</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyek 3 -->
+        <div class="col-md-6 col-lg-4 project-item" data-kategori="desain">
+          <div class="card card-hover h-100">
+            <img src="img/project-3.svg" class="portfolio-thumb w-100" alt="Desain Poster Kegiatan Kampus">
+            <div class="card-body d-flex flex-column">
+              <span class="badge badge-soft mb-2 align-self-start">Desain</span>
+              <h5 class="card-title fw-bold">Desain Poster Kegiatan Kampus</h5>
+              <p class="card-text text-muted-soft flex-grow-1">
+                Rangkaian poster untuk seminar teknologi dan kegiatan organisasi mahasiswa.
+              </p>
+              <a href="detail.html" class="btn btn-primary btn-sm">Lihat Detail</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyek 4 -->
+        <div class="col-md-6 col-lg-4 project-item" data-kategori="multimedia">
+          <div class="card card-hover h-100">
+            <img src="img/project-4.svg" class="portfolio-thumb w-100" alt="Media Pembelajaran Interaktif">
+            <div class="card-body d-flex flex-column">
+              <span class="badge badge-soft mb-2 align-self-start">Multimedia</span>
+              <h5 class="card-title fw-bold">Media Pembelajaran Interaktif</h5>
+              <p class="card-text text-muted-soft flex-grow-1">
+                Media ajar digital interaktif untuk materi dasar jaringan komputer.
+              </p>
+              <a href="detail.html" class="btn btn-primary btn-sm">Lihat Detail</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyek 5 -->
+        <div class="col-md-6 col-lg-4 project-item" data-kategori="data">
+          <div class="card card-hover h-100">
+            <img src="img/project-5.svg" class="portfolio-thumb w-100" alt="Dashboard Data Nilai">
+            <div class="card-body d-flex flex-column">
+              <span class="badge badge-soft mb-2 align-self-start">Data</span>
+              <h5 class="card-title fw-bold">Dashboard Data Nilai</h5>
+              <p class="card-text text-muted-soft flex-grow-1">
+                Tampilan dashboard sederhana untuk menyajikan rekapitulasi nilai mahasiswa.
+              </p>
+              <a href="detail.html" class="btn btn-primary btn-sm">Lihat Detail</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Proyek 6 -->
+        <div class="col-md-6 col-lg-4 project-item" data-kategori="video">
+          <div class="card card-hover h-100">
+            <img src="img/project-6.svg" class="portfolio-thumb w-100" alt="Video Profil Organisasi">
+            <div class="card-body d-flex flex-column">
+              <span class="badge badge-soft mb-2 align-self-start">Video</span>
+              <h5 class="card-title fw-bold">Video Profil Organisasi</h5>
+              <p class="card-text text-muted-soft flex-grow-1">
+                Video profil singkat organisasi kemahasiswaan hasil editing mandiri.
+              </p>
+              <a href="detail.html" class="btn btn-primary btn-sm">Lihat Detail</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Pesan bila hasil filter kosong -->
+      <p id="noResult" class="text-center text-muted-soft mt-4 d-none">
+        Tidak ada proyek pada kategori ini.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="pt-5 pb-4">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <a class="navbar-brand d-flex align-items-center gap-2 fw-bold text-white mb-3" href="index.html">
+            <span class="brand-logo">S</span> SuciDian
+          </a>
+          <p class="mb-0">Portofolio pribadi Suci Dian Azzahra, mahasiswa Pendidikan Teknologi Informasi Universitas Sulawesi Barat.</p>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+          <h6 class="text-white fw-bold mb-3">Navigasi</h6>
+          <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="projects.html">Portofolio</a></li>
+            <li><a href="detail.html">Studi Kasus</a></li>
+            <li><a href="about.html">Tentang</a></li>
+            <li><a href="login.html">Login</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <h6 class="text-white fw-bold mb-3">Ikuti</h6>
+          <div class="d-flex gap-2">
+            <a href="#" class="social-icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-icon" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            <a href="#" class="social-icon" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="social-icon" aria-label="Email"><i class="bi bi-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="border-secondary my-4">
+      <p class="text-center mb-0 small">
+        &copy; <span id="tahun"></span> Suci Dian Azzahra &middot; NIM D0425309 &middot; Universitas Sulawesi Barat
+      </p>
+    </div>
+  </footer>
+
+  <button id="btnTop" class="btn btn-primary rounded-circle position-fixed d-none"
+          style="right: 20px; bottom: 20px; width: 48px; height: 48px; z-index: 1050;"
+          aria-label="Kembali ke atas">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- ================= FILTER KATEGORI (JavaScript) ================= -->
+  <script>
+    // Menampilkan/menyembunyikan kartu berdasarkan kategori yang dipilih
+    const tombolFilter = document.querySelectorAll(".filter-btn");
+    const itemProyek = document.querySelectorAll(".project-item");
+    const noResult = document.getElementById("noResult");
+
+    tombolFilter.forEach(function (tombol) {
+      tombol.addEventListener("click", function () {
+        // Atur gaya tombol aktif
+        tombolFilter.forEach(function (b) {
+          b.classList.remove("btn-primary", "active");
+          b.classList.add("btn-outline-primary");
+        });
+        tombol.classList.add("btn-primary", "active");
+        tombol.classList.remove("btn-outline-primary");
+
+        const kategori = tombol.getAttribute("data-filter");
+        let tampil = 0;
+
+        itemProyek.forEach(function (item) {
+          const cocok = kategori === "all" || item.getAttribute("data-kategori") === kategori;
+          item.classList.toggle("d-none", !cocok);
+          if (cocok) tampil++;
+        });
+
+        noResult.classList.toggle("d-none", tampil > 0);
+      });
+    });
+  </script>
+</body>
+</html>

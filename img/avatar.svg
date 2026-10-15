@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400" role="img" aria-label="Ilustrasi avatar Suci Dian Azzahra">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ede9fe"/>
+      <stop offset="1" stop-color="#c4b5fd"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <!-- Badan -->
+  <path d="M110 400 C110 300 160 270 200 270 C240 270 290 300 290 400 Z" fill="#6d28d9"/>
+  <!-- Leher -->
+  <rect x="180" y="225" width="40" height="55" rx="18" fill="#f2c9a8"/>
+  <!-- Rambut belakang -->
+  <ellipse cx="200" cy="170" rx="95" ry="105" fill="#3b2a54"/>
+  <!-- Wajah -->
+  <ellipse cx="200" cy="180" rx="72" ry="82" fill="#f7d3b3"/>
+  <!-- Rambut depan -->
+  <path d="M128 165 C128 95 272 95 272 165 C272 130 240 120 200 120 C160 120 128 130 128 165 Z" fill="#3b2a54"/>
+  <!-- Mata -->
+  <circle cx="176" cy="180" r="9" fill="#2b2136"/>
+  <circle cx="224" cy="180" r="9" fill="#2b2136"/>
+  <circle cx="179" cy="177" r="3" fill="#ffffff"/>
+  <circle cx="227" cy="177" r="3" fill="#ffffff"/>
+  <!-- Senyum -->
+  <path d="M178 210 Q200 230 222 210" stroke="#b06a4a" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <!-- Hijab opsional: pita -->
+  <circle cx="200" cy="70" r="16" fill="#f59e0b"/>
+  <path d="M184 70 L216 70" stroke="#ffffff" stroke-width="4"/>
+</svg>
